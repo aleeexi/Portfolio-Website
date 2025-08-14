@@ -1,0 +1,57 @@
+:root {
+    --black: #0C021A;
+    --white: #E7EFF3;
+    --grey: #D1D9DD;
+    --dark-green: #101713;
+    --light-green: #35483A;
+}
+
+@font-face {
+    font-family: 'Fustat';
+    src: url('fonts/Fustat/Fustat-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Fustat';
+    src: url('fonts/Fustat/Fustat-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Fustat';
+    src: url('fonts/Fustat/Fustat-SemiBold.ttf');
+    font-weight: 600;
+}
+
+.sidebar {
+    height: 100%;
+    width: 186px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--grey);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    padding: 6px 8px 16px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--black);
+    display: block;
+    font-family: 'Fustat';
+    font-weight: 600;
+    letter-spacing: -1.4px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}
