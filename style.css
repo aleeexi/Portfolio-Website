@@ -24,6 +24,32 @@
     font-weight: 600;
 }
 
+@font-face {
+    font-family: 'Playfair';
+    src: url('fonts/Playfair/Playfair_144pt-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('fonts/Playfair/Playfair_144pt-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('fonts/Playfair/Playfair_144pt-MediumItalic.ttf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('fonts/Playfair/Playfair_144pt-SemiBoldItalic.ttf');
+    font-weight: 600;
+    font-style: italic;
+}
+
 .sidebar {
     height: 100%;
     width: 186px;
@@ -33,11 +59,23 @@
     right: 0;
     background-color: var(--grey);
     overflow-x: hidden;
-    padding-top: 20px;
+}
+
+.block {
+    background-color: var(--light-green);
+    height: 125px;
+    display: flex;
+    justify-content: center;
+}
+
+.block img {
+    width: 80.65%;
 }
 
 .sidebar a {
-    padding: 6px 8px 16px 16px;
+    padding-top: 67px;
+    padding-left: 18px;
+    padding-bottom: 3px;
     text-decoration: none;
     font-size: 20px;
     color: var(--black);
@@ -45,6 +83,46 @@
     font-family: 'Fustat';
     font-weight: 600;
     letter-spacing: -1.4px;
+}
+
+.sidebar a:hover {
+    
+}
+
+.sidebar hr {
+    border-top: 2px solid var(--black);
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin: 0px auto;
+}
+
+.spacer {
+    height: 263px;
+}
+
+.footer {
+    background-color: var(--white);
+    height: 47px;
+}
+
+.footer p {
+    font-family: 'Playfair';
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+    padding-left: 18px;
+    letter-spacing: -0.6px;
+    float: left;
+}
+
+.footer a {
+    float: left;
+    padding-top: 14px;
+}
+
+.footer img {
+    width: 18px;
 }
 
 @media screen and (max-height: 450px) {
